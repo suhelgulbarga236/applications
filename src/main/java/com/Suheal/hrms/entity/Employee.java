@@ -1,11 +1,9 @@
 package com.Suheal.hrms.entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
+import lombok.*;
 
 import javax.persistence.Entity;
+import javax.persistence.Id;
 
 @Entity
 @Data
@@ -13,6 +11,10 @@ import javax.persistence.Entity;
 @NoArgsConstructor
 @ToString
 public class Employee {
-
-
+    @Id
+    private Long id;
+    private String ename;
+    private int age;
+    private Double esal;
+    private String address;
 }
